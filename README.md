@@ -1,5 +1,5 @@
 # outfitShop
-This is mini affordable function outfit app where multiple outfitter shop can sell their products and  interact with multiple user
+This is mini affordable function outfit android application where multiple outfitter shop can sell their products and  interact with multiple user
 and in this project firebase is used.
 
 #Features:
