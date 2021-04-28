@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    app:cardBackgroundColor="@color/sel_btm_nav_color"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toStartOf="@+id/next"
+            >
+            <TextView
+                android:id="@+id/seller_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bg"
+                android:padding="5dp"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/seller_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/email"
+                android:layout_below="@+id/seller_username"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/seller_phoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/phone_number"
+                android:layout_below="@+id/seller_email"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

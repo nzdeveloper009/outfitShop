@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Affordable Function Outfit</string>
+    <string name="email">Email</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="not_registered_signup_here">Not Registered? SignUp Here</string>
+    <string name="log_in">Log-In</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="register">REGISTER</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="hostel_detail">Hostel detail</string>
+    <string name="i_agree_to">I agree to</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="upload_profile_pic">+ Upload Profile Pic</string>
+    <string name="signup">SignUp</string>
+    <string name="already_registered_then_sign_in">Already Registered then Sign-In</string>
+    <string name="username">Username</string>
+    <string name="nic_no">NIC No.</string>
+    <string name="buyer">BUYER</string>
+    <string name="seller">Seller</string>
+    <string name="payment">Payment</string>
+    <string name="remember_me">Remember me</string>
+    <string name="log_out">Log Out</string>
+
+    <string name="on_rent">on rent</string>
+    <string name="women_nfashion">Women\nFashion</string>
+    <string name="special_noffer">Special\nOffer</string>
+
+    <string name="add_special_discount_products">Add Special/Discount Products</string>
+    <string name="add_men_products">Add Men Products</string>
+    <string name="add_women_products">Add Women Products</string>
+
+    <string name="loading">Loading…</string>
+    <string name="capture">Capture</string>
+    <string name="post">Post</string>
+    <string name="shops">Shops</string>
+    <string name="order_list">Order List</string>
+    <string name="orders">Orders</string>
+</resources>

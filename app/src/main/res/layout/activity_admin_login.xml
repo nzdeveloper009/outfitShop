@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Admin.AdminLogin">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:elevation="3dp"
+        app:cardCornerRadius="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/ic_person_black_24dp"
+                    app:tint="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/log_in"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/rectangle" />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutLoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/imageViewEmailIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#838988"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_account_circle_black_24dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/emailLogIn"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageViewEmailIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageViewEmailIcon"
+                    android:background="@color/editTextBackground"
+                    android:text="admin"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutLoginEmail"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/imageViewPasswordIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#838988"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_lock_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/PasswordLogIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageViewPasswordIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageViewPasswordIcon"
+                    android:background="@color/editTextBackground"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/idLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_below="@+id/relativeLayoutLoginPassword"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round_btn"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:onClick="logInFunction"
+                android:text="@string/log_in"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

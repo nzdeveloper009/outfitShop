@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="16dp"
+    tools:context=".Seller.OrderTab.SpecialProductOrderList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buyer_men_round_btn"
+            android:gravity="center"
+            android:text="Orders List 🛒"
+            android:textColor="#071425"
+            android:textSize="35sp"
+            android:textStyle="italic|bold" />
+        <!--Products-->
+        <RelativeLayout
+            android:id="@+id/ordersRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <!--SearchView-->
+            <EditText
+                android:id="@+id/filterOrdersTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#2196F3"
+                android:hint="S\t\tE\t\tA\t\tR\t\t C\t\tH"
+                android:padding="10dp" />
+            <!--filter-->
+            <ImageButton
+                android:id="@+id/filterOrderBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_fliter"
+                />
+            <!--RecyclerView: show orders-->
+            <!--stackFromEnd -> To add Newest one-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ordersRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterOrdersTv"
+                app:stackFromEnd="true"
+                tools:listitem="@layout/row_order_seller"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

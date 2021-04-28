@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "524731824849",
+    "firebase_url": "https://affordable-function-outf-36c9f-default-rtdb.firebaseio.com",
+    "project_id": "affordable-function-outf-36c9f",
+    "storage_bucket": "affordable-function-outf-36c9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524731824849:android:e63b60ecb3beeca35fe3f0",
+        "android_client_info": {
+          "package_name": "com.nzdeveloper009.affordablefunctionoutfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524731824849-0419odamf819epfc5brodrbe0rde6neg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nzdeveloper009.affordablefunctionoutfit",
+            "certificate_hash": "05ceaefa1c68a60514448e664e0840cf7c40f164"
+          }
+        },
+        {
+          "client_id": "524731824849-1bqtd7fogbj2h554cqnldflofi2c8gi2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeyYfp_RhzhFG7LfnvCnuQrDecpA_An3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524731824849-1bqtd7fogbj2h554cqnldflofi2c8gi2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
